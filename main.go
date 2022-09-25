@@ -30,4 +30,11 @@ func main() {
 	fmt.Println(lesson1.CheckDuplicates("aa"))  // true
 	fmt.Println(lesson1.CheckDuplicates("Aa"))  // true
 	fmt.Println(lesson1.CheckDuplicates("aA"))  // true
+
+	// Exercise 4
+	fmt.Println("Калькулятор")
+	v1 := lesson1.Eval(10, 20, lesson1.Plus, "45", lesson1.Minus)
+	fmt.Printf("%T %v\n", v1, v1) // float64 -15
+	v2 := lesson1.Eval(10, 2.5, lesson1.Plus)
+	fmt.Printf("%T %v\n", v2, v2) // float64 12.5
 }
