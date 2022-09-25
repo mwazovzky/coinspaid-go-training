@@ -1,0 +1,1 @@
+# Coinspaid GO traning
