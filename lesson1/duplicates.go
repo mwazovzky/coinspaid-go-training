@@ -3,29 +3,33 @@ package lesson1
 const shift = 32
 
 func CheckDuplicates(str string) bool {
-	var prev int32
+	var mask int32
 
 	for _, ch := range str {
-		diff := getDiff(ch, prev)
+		code := getCode(ch)
 
-		if diff == 0 || diff == shift {
+		if (mask & code) != 0 {
 			return true
 		}
 
-		prev = ch
+		mask = mask | code
 	}
 
 	return false
 }
 
-func getDiff(a int32, b int32) int32 {
-	if a > b {
-		return a - b
+func getCode(ch int32) int32 {
+	return 1 << getShift(ch)
+}
+
+func getShift(ch int32) int32 {
+	if 'A' <= ch && ch <= 'Z' {
+		return ch - 65
 	}
 
-	if b > a {
-		return b - a
+	if 'a' <= ch && ch <= 'z' {
+		return ch - 97
 	}
 
-	return 0
+	panic("Wrong character?")
 }

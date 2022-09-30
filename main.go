@@ -26,10 +26,12 @@ func main() {
 
 	// Exercise 3
 	fmt.Println("Проверка строки на наличие повторяющихся символов")
-	fmt.Println(lesson1.CheckDuplicates("abc")) // false
-	fmt.Println(lesson1.CheckDuplicates("aa"))  // true
-	fmt.Println(lesson1.CheckDuplicates("Aa"))  // true
-	fmt.Println(lesson1.CheckDuplicates("aA"))  // true
+	fmt.Println(lesson1.CheckDuplicates("abc"))  // false
+	fmt.Println(lesson1.CheckDuplicates("aa"))   // true
+	fmt.Println(lesson1.CheckDuplicates("Aa"))   // true
+	fmt.Println(lesson1.CheckDuplicates("aA"))   // true
+	fmt.Println(lesson1.CheckDuplicates("abca")) // true
+	fmt.Println(lesson1.CheckDuplicates("abcA")) // true
 
 	// Exercise 4
 	fmt.Println("Калькулятор")
