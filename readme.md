@@ -24,3 +24,8 @@ eval(10, 2.5, plus) => 12.5
 Для преобразования пакет strconv:
 strconv.Atoi(“10”) - для целых
 strconv.ParseFloat("1.23", 64) - для float
+
+### Lesson 2
+
+#### Exercise 1. Slice resizing
+Определить как меняется размер слайса при добавлении элементов.
