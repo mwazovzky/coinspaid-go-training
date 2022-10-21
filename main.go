@@ -1,9 +1,12 @@
 package main
 
 import (
-	"coinspaid-go/lesson2"
+	"coinspaid-go/lesson4"
 )
 
 func main() {
-	lesson2.Tests()
+	// lesson4.Goroutines()
+	// lesson4.Channels()
+	// lesson4.Context()
+	lesson4.Homework()
 }
